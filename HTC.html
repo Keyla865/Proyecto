@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Imagenes/Audifonos4k.jpg" type="image/png">
+    <title>Listen Shop</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="Index.html">
+        <img src="Imagenes/Logo.avif" alt="Logo de Apple Aipords" max-width="10%">
+        </a>
+        <h1>Listen Shop</h1>
+        <script>
+            const precioUnitario = 385.00; // Precio definido aquí
+        </script>
+        <script src="script.js"></script>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar...">
+            <button id="search-btn" onclick="buscar()">
+                <img src="Imagenes/Buscar.png" alt="Buscar">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Perfil.html" target="_blank">Perfil</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Novedades</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="Audifonos-details-container">
+        <div class="Audifonos-images">
+            <img id="main-image" src="Imagenes/audi33.png" alt="HTC">
+            <div class="gallery">
+                <img class="thumbnail" src="Imagenes/audi333.png" alt="HTC">
+                <img class="thumbnail" src="Imagenes/audi3333.png" alt="HTC">
+                <img class="thumbnail" src="Imagenes/audi33333.png" alt="HTC">
+            </div>
+        </div>
+
+        <div class="audi-info">
+            <h2>HTC Audifonos Inalambricos Bluetooth</h2>
+            <p class="precio-color">Precio: $385.00</p>
+            <p>Con una sola carga podrá disfrutar de hasta 6 horas 
+                ininterrumpidas de música. ¿Pasa mucho tiempo fuera 
+                de casa? Despreocúpese y guarde sus audífonos en la 
+                mini funda protectora de cierre magnético cuando 
+                no los esté usando o para recargarlos múltiples veces, 
+                maximizando hasta 24 horas la vida útil de la batería.</p>
+
+            <ul>
+                <li>Caja con alta duracion</li>
+                <li>Audifonos ajustables al oido</li>
+                <li>Entrada tipo C (Cargador) L</li>
+                <li> El tiempo de resistencia de los auriculares 
+                    dura entre 18 y 24 horas, eliminando la ansiedad de la batería. 
+                    Equipado con un estuche de carga de 500 mA. </li>
+            </ul>
+            <div class="cantidad-compra-container">
+                <button class="btn-cantidad" onclick="cambiarCantidad(-1, precioUnitario)">-</button>
+                <span id="cantidad">1</span>
+                <button class="btn-cantidad" onclick="cambiarCantidad(1, precioUnitario)">+</button>
+                <button class="btn-comprar" onclick="comprar(precioUnitario)">Comprar</button>
+                <p id="total">Total: $385.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="details-specs-container">
+        <div class="Descripción">
+            <h3>Acerca de este artículo</h3>
+            <ul>
+                <li><h4>HTC Audifonos</h4></li>
+                <li>Distribuidor Autorizado HTC</li>
+                <li>Ajuste universal para usarlos con comodidad todo el día</li>
+                <li>Activación y conexión automática</li>
+                <li>Volumen de control táctil inteligente</li>
+                <li>Cambio inmediato de un dispositivo a otro</li>
+            </ul>
+        </div>
+
+        <div class="Especificaciones">
+            <h3>Con HTC-Tech+</h3>
+            <ul>
+                <li><h4>Distribuidor Autorizado HTC-Tech</h4></li>
+                <li>Ajuste universal para usarlos con comodidad todo el día</li>
+                <li>Activación y conexión automática</li>
+                <li>Fácil configuración en todos tus dispositivos </li>
+            
+            </ul>
+        </div>
+    </div>
+
+<!-- Pie de página -->
+<footer>
+    <div class="footer-container">
+        <!-- Columna 1: Horario -->
+        <div class="footer-column">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes: 7 am - 8 pm</p>
+            <p>Sábado y Domingo: 10 am - 5 pm</p>
+        </div>
+
+        <!-- Columna 2: Aviso de Privacidad -->
+        <div class="footer-column">
+            <h4><a href="Privacidad.html">Aviso de Privacidad</a></h4>
+            <p>Tu privacidad es importante para nosotros, nosotros te respaldaremos...</p>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p>Correo: ingenieros@uabc.edu.mx</p>
+            <p>Correo: desarrolladores@uabc.edu.mx</p>
+            <p>Teléfono:  66412345678</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script> 
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Imagenes/Audifonos4k.jpg" type="image/png">
+    <title>Listen Shop</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="Index.html">
+        <img src="Imagenes/Logo.avif" alt="Logo de Apple Aipords" max-width="10%">
+        </a>
+        <h1>Listen Shop</h1>
+        <script>
+            const precioUnitario = 21900; // Precio definido aquí
+        </script>
+        <script src="script.js"></script>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar...">
+            <button id="search-btn" onclick="buscar()">
+                <img src="Imagenes/Buscar.png" alt="Buscar">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Perfil.html" target="_blank">Perfil</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Novedades</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="Audifonos-details-container">
+        <div class="Audifonos-images">
+            <img id="main-image" src="Imagenes/Audifonos6.jpg" alt="Aipords">
+            <div class="gallery">
+                <img class="thumbnail" src="Imagenes/Audifonos7.jpg" alt="Aipords">
+                <img class="thumbnail" src="Imagenes/Audifonos8.jpg" alt="Aipords">
+                <img class="thumbnail" src="Imagenes/Audifonos5.jpg" alt="Aipords">
+            </div>
+        </div>
+
+        <div class="audi-info">
+            <h2>Apple AirPods con Estuche de Carga</h2>
+            <p class="precio-color">Precio: $2,199.00</p>
+            <p>Los AirPods te brindan una experiencia inalámbrica increíble, pues ahora te ofrecen muchas horas de audio 
+                y conversación, acceso a Siri activado por voz y la posibilidad de usarlos con un estuche de carga inalámbrica</p>
+
+            <ul>
+                <li>Caja con alta duracion</li>
+                <li>Audifonos ajustables al oido</li>
+                <li>Entrada tipo C (Cargador) L</li>
+                <li>24 horas de energias, sin uso del cargador</li>
+            </ul>
+            <div class="cantidad-compra-container">
+                <button class="btn-cantidad" onclick="cambiarCantidad(-1, precioUnitario)">-</button>
+                <span id="cantidad">1</span>
+                <button class="btn-cantidad" onclick="cambiarCantidad(1, precioUnitario)">+</button>
+                <button class="btn-comprar" onclick="comprar(precioUnitario)">Comprar</button>
+                <p id="total">Total: $2,199.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="details-specs-container">
+        <div class="Descripción">
+            <h3>Acerca de este artículo</h3>
+            <ul>
+                <li><h4>Aipords</h4></li>
+                <li>Distribuidor Autorizado Apple</li>
+                <li>Ajuste universal para usarlos con comodidad todo el día</li>
+                <li>Activación y conexión automática</li>
+                <li>Acceso rápido a Siri con sólo decir "Oye Siri"</li>
+                <li>Comparte fácilmente lo que estás escuchando entre dos pares de AirPods conectados a tu iPhone, iPad, iPod touch y Apple TV</li>
+                <li>Cambio inmediato de un dispositivo a otro</li>
+            </ul>
+        </div>
+
+        <div class="Especificaciones">
+            <h3>Con AppleCare+</h3>
+            <ul>
+                <li><h4>Distribuidor Autorizado Apple</h4></li>
+                <li>Ajuste universal para usarlos con comodidad todo el día</li>
+                <li>Activación y conexión automática</li>
+                <li>Fácil configuración en todos tus dispositivos Apple</li>
+                <li>Protección para tus AirPods y audífonos Beats con el AppleCare+.</li>
+            
+            </ul>
+        </div>
+    </div>
+
+<!-- Pie de página -->
+<footer>
+    <div class="footer-container">
+        <!-- Columna 1: Horario -->
+        <div class="footer-column">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes: 7 am - 8 pm</p>
+            <p>Sábado y Domingo: 10 am - 5 pm</p>
+        </div>
+
+        <!-- Columna 2: Aviso de Privacidad -->
+        <div class="footer-column">
+            <h4><a href="Privacidad.html">Aviso de Privacidad</a></h4>
+            <p>Tu privacidad es importante para nosotros, nosotros te respaldaremos...</p>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p>Correo: ingenieros@uabc.edu.mx</p>
+            <p>Correo: desarrolladores@uabc.edu.mx</p>
+            <p>Teléfono:  66412345678</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script> 
+
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+/* Estilo general de la página */
+body {
+    background-color: rgb(210, 210, 210);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el texto */
+.p {
+    text-align: center; /* Se aplica al texto centrado */
+    text-align: justify; /* Se aplica al texto justificado */
+    font-size: 20px; /* Tamaño de fuente predeterminado */
+}
+
+/* Estilos para el encabezado y barra de búsqueda */
+.logo {
+    max-width: 100px; /* Ancho máximo del logotipo */
+}
+
+.search-container {
+    display: flex; /* Contenedor de búsqueda con diseño de flexbox */
+    align-items: center; /* Alineación de elementos en el centro */
+}
+
+#search-bar {
+    padding: 10px;
+    width: 300px; /* Ancho del campo de búsqueda */
+    border: none;
+    border-radius: 20px;
+}
+
+#search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+    max-width: 20px;
+}
+
+#search-btn img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos para la galería de productos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 50px; /* Relleno interno */
+}
+
+/* Estilos para cada elemento de la galería (moto) */
+.audifonos {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #ffffff; /* Borde alrededor de cada moto */
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Estilos para el contenido interno de cada moto */
+.audi-inner {
+    text-align: center;
+    padding: 10px;
+}
+
+.moto img {
+    max-width: 100%;
+    border: 1px solid #ddd; /* Borde alrededor de la imagen de la moto */
+}
+
+.moto h2 {
+    text-align: center;
+    margin: 10px 0; /* Espacio entre el título y otros elementos */
+}
+
+.moto p {
+    font-weight: bold;
+}
+
+.precio-color {
+    font-weight: bold;
+    color: blue; /* Color rojo para el precio */
+    font-size: 20px;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #01060e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav li {
+    margin-right: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Más estilos... */
+
+/* Estilo para el formulario de inicio de sesión */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+/*boton log*/
+.btn-login {
+    display: block;
+    width: 100%; /* Ancho del botón */
+    padding: 15px; /* Tamaño del botón */
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*.registro-perfil h2{
+	text-align: center;
+	margin: 0 auto;
+}*/
+.btn-login:hover {
+    background-color: darkgoldenrod; /* Color de fondo al pasar el cursor */
+}
+
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+.form-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid
+}
+
+/*registro*/
+
+
+.btn-signup {
+    display: block;
+    width: 100%; /* Ancho del botón */
+    padding: 15px; /* Tamaño del botón */
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-signup:hover {
+    background-color: darkgoldenrod; /* Color de fondo al pasar el cursor */
+}
+/*imagenes rotativas*/
+.rotating-images-container {
+    margin-top:20px;
+    overflow: hidden;
+
+}
+
+#rotating-images {
+    display: flex;
+    max-width: 60%;
+    animation: rotateImages 10s linear infinite; /* Ajusta la duración  */
+}
+
+#rotating-images img {
+    width: auto; /* Hace que el ancho de la imagen se ajuste automáticamente */
+    max-width: 20%; /* Ajusta el ancho máximo al tamaño del contenedor */
+    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+
+/* Animación para rotar las imágenes */
+@keyframes rotateImages {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilos para el contenedor principal */
+.Audifonos-details-container {
+    background-color: white;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top:20px;
+    padding: 20px; 
+}
+
+/* Estilos para la columna de imágenes */
+.audifonos-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#main-image {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.thumbnail {
+    max-width: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+/* Estilos para la columna de información */
+.moto-info {
+    flex: 1;
+}
+
+
+.details-specs-container {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 841px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 8px;
+}
+/*botones compra*/
+/* Estilos para los botones de cantidad y compra */
+.cantidad-compra-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-cantidad,
+.btn-comprar {
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cantidad {
+    margin: 0 10px;
+    font-size: 16px;
+}
+/*pie de pagina*/
+footer {
+    background-color: #e3e0dc;
+    padding: 20px;
+    text-align: center;
+    color: rgb(14, 0, 0);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Aviso de privacidad */
+.container-privacity {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-privacity {
+    text-align: center;
+    text-align: justify;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.privacy-text {
+    margin-top: 20px;
+    text-align: justify;
+}
+.privacidad{
+    color: white;
+}
+/*Contacto*/
+.contact-photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-person img {
+    width: 200px; 
+    height: auto;
+}
+.container-contacto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    text-align: center;
+}
+.address {
+    text-align: center; 
+}
+
+.address p {
+    margin: 10px 0; 
+}
+.container-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.producto {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imagen-nov {
+    width: 400px; 
+    margin-right: 10px;
+}
+
+.descripcion {
+    flex: 1; 
+}
+
+.precio {
+    font-weight: bold;
+    color: #0f0501; 
+}

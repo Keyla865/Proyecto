@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Imagenes/Logo.avif" type="image/png">
+    <title>Listen Shop</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="Index.html">
+        <img src="Imagenes/Logo.avif" alt="Listen Shop" max-width="10%">
+        </a>
+        <h1>Listen Shop</h1>
+        <script>
+            const precioUnitario = 619.00; // Precio definido aquí
+        </script>
+        <script src="script.js"></script>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar...">
+            <button id="search-btn" onclick="buscar()">
+                <img src="Imagenes/Buscar.png" alt="Buscar">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Perfil.html" target="_blank">Perfil</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Novedades</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="Audifonos-details-container">
+            <div class="imagenes-audifonos">
+                <img id="main-image" src="Imagenes/Audifonos13.jpg" alt="JBL TUNE">
+                <div class="gallery">
+                    <img class="thumbnail" src="Imagenes/Audifonos10.jpg" alt="JBL TUNE">
+                    <img class="thumbnail" src="Imagenes/Audifonos11.jpg" alt="JBL TUNE">
+                    <img class="thumbnail" src="Imagenes/Audifonos12.jpg" alt="JBL TUNE">
+                </div>
+            </div>
+
+            <div class="info-Audifonos">
+                <h2>JBL TUNE Edicion Especial</h2>
+                <p class="precio-color">Precio: $619.00</p>
+                <p>JBL Audífono Inalámbrico Tipo Diadema Tune 520BT, Respuesta de Frecuencia 20-20000Hz, Bluetooth 5.3. Color Negro.</p>
+
+                <ul>
+                    <li>Marca	JBL</li>
+                    <li>Nombre del modelo	TUNE520BT</li>
+                    <li>Color	Negro</li>
+                    <li>Factor de forma	Circumaurales</li>
+                    <li>Tecnología de conectividad	Inalámbrico</li>
+                </ul>
+                <div class="cantidad-compra-container">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1, precioUnitario)">-</button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1, precioUnitario)">+</button>
+                    <button class="btn-comprar" onclick="comprar(precioUnitario)">Comprar</button>
+                    <p id="total">Total: $619.00 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-specs-container">
+            <div class="Descripción">
+                <h3>Acerca de este artículo</h3>
+                <ul>
+                    <li><h4>JBL TUNE EDIFICION ESPECIAL</h4></li>
+                    <li>Auriculares inalámbricos supraaurales con sonido JBL Pure Bass</li>
+                    <li>Tecnología inalámbrica Bluetooth 5.3</li>
+                    <li>Personaliza tu experiencia de sonido</li>
+                    <li>Hasta 57 horas de duracion de la bateria y carga rapida</li>
+                    <li>conexiones multipunto</li>
+                </ul>
+                <ul>
+                    <li><h4>Especificaciones técnicas</h4></li>
+                    <li>Tecnología de comunicación inalámbrico    Bluetooth</li>
+                    <li>Característica especial      Sonido JBL Pure Bass</li>
+                    <li>Componentes incluidos	Cable de carga tipo C, 1 auriculares JBL Tune 520BT, 1 garantía/advertencia, 1 guía de inicio rápido/hoja de seguridad</li>
+                    <li>Rango de edad (descripción)	 Niño Adolescente Jóven Adulto</li>
+                    <li>Usos específicos del producto	Viaje, Música</li>
+                    <li>Dispositivos compatibles	Ordenadores de sobremesa, Equipo de producción musical, Portátiles, Android</li>
+                </ul>
+                <ul>
+                    <li><h4>Información adicional</h4></li>
+                    <li>Dimensiones del producto	20,5 x 7,3 x 22,3 cm; 155,92 g</li>
+                    <li>Número de modelo del producto	JBLT520BTBLKAM</li>
+                    <li>ASIN	B0C1HGKNG7</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- Pie de página -->
+<footer>
+    <div class="footer-container">
+        <!-- Columna 1: Horario -->
+        <div class="footer-column">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes: 7 am - 8 pm</p>
+            <p>Sábado y Domingo: 10 am - 5 pm</p>
+        </div>
+
+        <!-- Columna 2: Aviso de Privacidad -->
+        <div class="footer-column">
+            <h4><a href="Privacidad.html">Aviso de Privacidad</a></h4>
+            <p>Tu privacidad es importante para nosotros, nosotros te respaldaremos...</p>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p>Correo: ingenieros@uabc.edu.mx</p>
+            <p>Correo: desarrolladores@uabc.edu.mx</p>
+            <p>Teléfono:  66412345678</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
